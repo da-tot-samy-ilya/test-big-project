@@ -2,9 +2,12 @@ import {render} from "react-dom";
 import "./styles/index.scss"
 import {BrowserRouter} from "react-router-dom";
 import App from "./App";
+import ThemeProvider from "./theme/ThemeProvider";
 render(
     <BrowserRouter>
-        <App/>
+        <ThemeProvider>
+            <App/>
+        </ThemeProvider>
     </BrowserRouter>,
     document.querySelector("#root")
 )
