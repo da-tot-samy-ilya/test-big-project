@@ -1,0 +1,12 @@
+.navbar {
+    min-height: var(--navbar-min-height);
+    background: var(--bg-inverted-color);
+    display: flex;
+    align-items: center;
+}
+.links {
+    margin-left: auto;
+}
+.link:not(:last-child) {
+    margin-right: 15px;
+}
