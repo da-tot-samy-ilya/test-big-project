@@ -1,6 +1,9 @@
 import React from 'react';
+import {compile} from "sass";
+import {useTranslation} from "react-i18next";
 
 const MainPage = () => {
+    const {t} = useTranslation("main")
     return (
         <div>
             <br/>
@@ -8,7 +11,7 @@ const MainPage = () => {
             <br/>
             <br/>
             <br/>
-            Main
+            {t("Главная")}
         </div>
     );
 };
