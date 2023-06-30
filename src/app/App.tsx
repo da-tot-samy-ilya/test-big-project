@@ -1,17 +1,15 @@
-import {useTheme} from "./providers/ThemeProvider";
-import {classNames} from "../shared/lib/classNames/classNames";
-import {AppRouter} from "./providers/AppRouter";
-import {Navbar} from "../widgets/Navbar";
-import {Sidebar} from "../widgets/Sidebar";
-import {Suspense} from "react";
-
-
+import { classNames } from '../shared/lib/classNames/classNames'
+import { useTheme } from './providers/ThemeProvider'
+import { AppRouter } from './providers/AppRouter'
+import { Navbar } from '../widgets/Navbar'
+import { Sidebar } from '../widgets/Sidebar'
+import { Suspense } from 'react'
 
 const App = () => {
-    const {toggleTheme, theme} = useTheme()
+  const { theme } = useTheme()
 
-    return (
-        <div className={classNames("app", {}, [theme])}>
+  return (
+        <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar/>
                 <div className="content-page">
@@ -20,7 +18,7 @@ const App = () => {
                 </div>
             </Suspense>
         </div>
-    );
+  )
 }
 
-export default App;
+export default App

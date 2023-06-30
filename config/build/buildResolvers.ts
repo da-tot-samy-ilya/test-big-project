@@ -1,7 +1,7 @@
-import webpack from "webpack";
+import type webpack from 'webpack'
 
 export const buildResolvers = (): webpack.ResolveOptions => {
     return {
-        extensions: ['.tsx', '.ts', '.js'],
+        extensions: ['.tsx', '.ts', '.js']
     }
 }

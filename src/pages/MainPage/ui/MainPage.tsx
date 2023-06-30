@@ -1,9 +1,8 @@
-import React from 'react';
-import {compile} from "sass";
-import {useTranslation} from "react-i18next";
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const MainPage = () => {
-    const {t} = useTranslation("main")
+    const { t } = useTranslation('main')
     return (
         <div>
             <br/>
@@ -11,9 +10,9 @@ const MainPage = () => {
             <br/>
             <br/>
             <br/>
-            {t("Главная")}
+            {t('Главная')}
         </div>
-    );
-};
+    )
+}
 
-export default MainPage;
+export default MainPage
