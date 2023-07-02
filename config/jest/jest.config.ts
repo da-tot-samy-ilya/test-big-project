@@ -32,7 +32,15 @@ export default {
     'node'
   ],
   rootDir: '../../',
-  testEnvironment: 'node'
+  testEnvironment: 'jsdom',
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.(ts|js)x?$': 'ts-jest'
+  },
+  setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
+  moduleNameMapper: {
+    '\\.(css|scss)$': 'identity-obj-proxy'
+  }
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
