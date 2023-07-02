@@ -4,26 +4,26 @@ import { routeConfig } from '../../../../shared/routeConfig/routeConfig'
 import { PageLoader } from '../../../../widgets/PageLoader'
 
 const AppRouter = () => {
-  return (
+    return (
         <Suspense fallback={<PageLoader/>}>
             <Routes>
                 {Object.values(routeConfig)
-                  .map(route =>
+                    .map(route =>
 
                         <Route
                             key={route.path}
                             path={route.path}
                             element={
-                            <div className="page-wrapper">
-                                {route.element}
-                            </div>
+                                <div className="page-wrapper">
+                                    {route.element}
+                                </div>
 
-                        }>
+                            }>
                         </Route>)
                 }
             </Routes>
         </Suspense>
-  )
+    )
 }
 
 export default AppRouter

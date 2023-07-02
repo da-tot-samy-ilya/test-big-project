@@ -12,10 +12,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: FC<ButtonProps> = ({
-                                            className,
-                                            children,
-                                            theme = ThemeButton.CLEAR,
-                                            ...otherProps
+    className,
+    children,
+    theme = ThemeButton.CLEAR,
+    ...otherProps
 }) => {
     return (
         <button {...otherProps} className={classNames(cls.Button, {}, [className, cls[theme]])}>

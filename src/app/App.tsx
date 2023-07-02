@@ -6,7 +6,7 @@ import { Sidebar } from '../widgets/Sidebar'
 import { Suspense, useEffect } from 'react'
 
 const App = () => {
-  const { theme } = useTheme()
+    const { theme } = useTheme()
 
     useEffect(() => {
         if (Math.random() < 0.5) {
@@ -14,7 +14,7 @@ const App = () => {
         }
     }, [])
 
-  return (
+    return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar/>
@@ -24,7 +24,7 @@ const App = () => {
                 </div>
             </Suspense>
         </div>
-  )
+    )
 }
 
 export default App

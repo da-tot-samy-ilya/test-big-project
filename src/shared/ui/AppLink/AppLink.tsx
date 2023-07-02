@@ -12,11 +12,11 @@ export enum AppLinkTheme {
     SECONDARY = 'secondary'
 }
 export const AppLink: FC<AppLinkProps> = ({
-                                              theme = AppLinkTheme.PRIMARY,
-                                              className,
-                                              children,
-                                              to,
-                                              ...otherProps
+    theme = AppLinkTheme.PRIMARY,
+    className,
+    children,
+    to,
+    ...otherProps
 }) => {
     return (
         <Link {...otherProps} to={to} className={classNames(cls.AppLink, {}, [className, cls[theme]])}>

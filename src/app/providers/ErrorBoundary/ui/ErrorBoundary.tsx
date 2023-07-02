@@ -1,6 +1,6 @@
-import React, {type ErrorInfo, type ReactNode, Suspense} from 'react'
+import React, { type ErrorInfo, type ReactNode, Suspense } from 'react'
 import { PageError } from '../../../../widgets/PageError/ui/PageError'
-import path from "path";
+import path from "path"
 
 interface ErrorBoundaryProps {
     children: ReactNode
