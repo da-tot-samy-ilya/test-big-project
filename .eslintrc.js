@@ -21,12 +21,15 @@ module.exports = {
     "project": 'tsconfig.json',
     "tsconfigRootDir": __dirname
   },
-  "plugins": ["react"],
+  "plugins": [
+      "react",
+      "react-hooks"
+  ],
   "rules": {
     "@typescript-eslint/indent": [2, 4],
     "indent": ["error", 4],
     "react/react-in-jsx-scope": "off",
-    "no-unused-vars": "off",
+    "no-unused-vars": "warn",
     "@typescript-eslint/no-unused-vars": ["warn"],
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/prefer-nullish-coalescing": 0,
@@ -37,6 +40,11 @@ module.exports = {
     "@typescript-eslint/no-throw-literal": 0,
     "@typescript-eslint/quotes": 0,
     "@typescript-eslint/ban-ts-comment": 0,
-    "@typescript-eslint/prefer-ts-expect-error": 0
+    "@typescript-eslint/prefer-ts-expect-error": 0,
+    "no-trailing-spaces": 0,
+    "no-multiple-empty-lines": 0,
+    "@typescript-eslint/no-confusing-void-expression": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
   }
 };

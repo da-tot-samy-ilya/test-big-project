@@ -24,3 +24,10 @@ export const Clear: Story = {
         theme: ThemeButton.CLEAR
     }
 }
+
+export const Outlined: Story = {
+    args: {
+        children: 'Button',
+        theme: ThemeButton.OUTLINED
+    }
+}
