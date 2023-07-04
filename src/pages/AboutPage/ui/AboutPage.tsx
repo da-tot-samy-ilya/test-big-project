@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import {Counter} from "../../../entities/Counter/ui/Counter";
+import { Counter } from "../../../entities/Counter/ui/Counter"
 
 const AboutPage = () => {
     const { t } = useTranslation('about')
