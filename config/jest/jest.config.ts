@@ -3,6 +3,8 @@
  * https://jestjs.io/docs/configuration
  */
 
+import {pathsToModuleNameMapper} from "ts-jest";
+
 export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
@@ -38,9 +40,11 @@ export default {
     '^.+\\.(ts|js)x?$': 'ts-jest'
   },
   setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
+
   moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy'
   }
+
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
