@@ -8,7 +8,6 @@
     opacity: 0;
     pointer-events: none;
     color: var(--primary-color);
-    background: var(--bg-color);
 }
 
 .Modal_open {
@@ -17,6 +16,7 @@
 
     .content {
         transform: scale(1);
+        background: var(--bg-color);
     }
 }
 .overlay {
@@ -24,12 +24,10 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
-
 }
 .content {
     padding: 20px;
     border-radius: 20px;
-    background: white;
     margin: auto;
 
     transition: 0.2s transform;
